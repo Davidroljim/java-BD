@@ -20,6 +20,7 @@ public class BibliotecaServiceimpL implements BibliotecaService{
 
 	@Override
 	public boolean inserta(Libro libro) {
+		return false;
 		// TODO Auto-generated method stub
 		//return librosBD.inserta(libro);
 	}
@@ -31,7 +32,7 @@ public class BibliotecaServiceimpL implements BibliotecaService{
 	}
 
 	@Override
-	public boolean actualiza(String isbn, Libro libro) {
+	public boolean actualizaLibro(String isbn, Libro libro) {
 		// TODO Auto-generated method stub
 		return false;
 	}

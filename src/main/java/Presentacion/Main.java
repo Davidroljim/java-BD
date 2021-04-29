@@ -21,6 +21,30 @@ public static void main(String[] args) {
 				// TODO Auto-generated method stub
 				return null;
 			}
+
+			@Override
+			public boolean insertaLibro(Libro libro) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+
+			@Override
+			public boolean eliminaLibro(Libro libro) {
+				// TODO Auto-generated method stub
+				return false;
+			}
+
+			@Override
+			public boolean actualizaLibro(String isbn, Libro libro) {
+				System.out.println("Introduce el ISBN del libro a actualizar:");
+				String isbn = leerLinea();
+				System.out.println("Introduce los nuevos datos para el libro");
+				String datosLibro = obtenerDatosLibro();				
+				Libro l = procesaEntrada(datosLibro);
+				boolean actualizado = servicio.actualizaLibro(isbn, l);
+				
+				return false;
+			}
 		};
 		
 		
@@ -93,4 +117,12 @@ public static void main(String[] args) {
 		retorno = sc.nextInt();
 		return retorno;
 	}
+	
+	
+	private static void eliminaLibro(){
+		
+		System.out.println("Indica el ISBN del libro que deseas eliminar:");
+	}
+	
+	
 }

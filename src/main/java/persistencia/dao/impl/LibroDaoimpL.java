@@ -64,4 +64,19 @@ public class LibroDaoimpL implements LibroDAO{
 		
 	}
 
+	@Override
+	public boolean actualizaLibro(String isbn, Libro libro) {
+		boolean updated = false;
+		
+		try {
+			
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		return updated;
+	}
+
 }

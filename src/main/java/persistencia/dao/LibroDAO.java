@@ -7,4 +7,7 @@ public interface LibroDAO {
 
 	List <Libro> obtenerDatosLibro();
 	
+	public void insertarLibros();
+	
+	public boolean actualizaLibro (String isbn, Libro libro);
 }
